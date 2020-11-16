@@ -1,0 +1,55 @@
+#header{
+    background-color: aqua;
+}
+#main{
+    border: solid red 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6px;
+}
+#container{
+    border: solid black 1px;
+    display: grid;
+    width: 98vw;
+    height:98vh;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+.children{
+    background-color: black;
+}
+#footer{
+    background-color: goldenrod;
+}
+#div-1{
+  background-color: aquamarine;
+  width: 100vw;
+  height: 50vh;  
+}
+#div-1:hover{
+    cursor: pointer;
+    animation: shrink forwards 1s infinite;
+}
+#div-2{
+    background-color:blue;
+    width:100vw;
+    height:50vh;
+}
+#div-2:hover{
+    cursor: pointer;
+    animation: shrink forwards 1s infinite;
+    animation-delay: 1s;
+}
+@keyframes shrink{
+    0% {
+        background-color: tomato;
+    }
+    50% {
+        background-color: violet;
+    }
+    100% {
+        width: 50vw;
+        height: 50vh;
+        background-color: wheat;
+    }
+}
